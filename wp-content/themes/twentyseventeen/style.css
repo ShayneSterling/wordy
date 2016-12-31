@@ -124,6 +124,12 @@ strong {
 	font-weight: 700;
 }
 
+.main1{
+	background-color: red;
+}
+.main2{
+	background-color: gray;
+}
 code,
 kbd,
 samp {
