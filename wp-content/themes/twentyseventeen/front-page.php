@@ -20,10 +20,10 @@ get_header(); ?>
 		<?php // Show the selected frontpage content.
 		if ( have_posts() ) :
 			while ( have_posts() ) : the_post();
-				get_template_part( 'template-parts/page/content', 'front-page' );
-			endwhile;
+		get_template_part( 'template-parts/page/content', 'front-page' );
+		endwhile;
 		else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
-			get_template_part( 'template-parts/post/content', 'none' );
+		get_template_part( 'template-parts/post/content', 'none' );
 		endif; ?>
 
 		<?php
@@ -46,9 +46,9 @@ get_header(); ?>
 				twentyseventeen_front_page_section( null, $i );
 			}
 
-	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
+			endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
 
-	</main><!-- #main -->
-</div><!-- #primary -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-<?php get_footer();
+	<?php get_footer();
